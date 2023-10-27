@@ -1,6 +1,12 @@
+import GameSavingLoader from './game-saving-loader';
+
 // TODO: write your code here
-import sum from './basic';
+console.log('Работает App.js (начало)');
 
-console.log('worked');
+GameSavingLoader.load().then((saving) => {
+  console.log('Загруженный объект:', saving);
+}, (error) => {
+  console.log('Ошибка:', error);
+});
 
-console.log(sum([1, 2]));
+console.log('Работает App.js (конец)');
