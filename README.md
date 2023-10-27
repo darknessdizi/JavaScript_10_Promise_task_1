@@ -1,5 +1,7 @@
 # Домашнее задание к лекции «Promises, async/await»
 
+[![Build status](https://ci.appveyor.com/api/projects/status/6ysnxt01yt8kxxn6?svg=true)](https://ci.appveyor.com/project/darknessdizi/javascript-10-promise-task-1)
+
 ## Promises
 
 ### Легенда
