@@ -1,4 +1,5 @@
 import GameSavingLoader from '../game-saving-loader';
+import GameSaving from '../game-saving';
 
 jest.setTimeout(15000);
 
@@ -7,6 +8,7 @@ test('Проверка функции GameSavingLoader', (done) => {
   expect(GameSavingLoader.load).toBeDefined();
   GameSavingLoader.load().then((response) => {
     expect(response).toEqual(JSON.parse(data));
+    expect(response).toBeInstanceOf(GameSaving);
     done();
   });
 });

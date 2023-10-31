@@ -15,6 +15,6 @@ export default function read() {
         }
         resolve(buffer);
       })(data);
-    }, 10000);
+    }, 1000);
   });
 }

@@ -3,6 +3,6 @@ export default function json(data) {
     // эмуляция обработки ArrayBuffer
     setTimeout(() => {
       resolve(String.fromCharCode.apply(null, new Uint16Array(data)));
-    }, 2000);
+    }, 1000);
   });
 }
